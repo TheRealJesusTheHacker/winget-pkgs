@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+PackageIdentifier: TheRealJesusTheHacker.Argus
+PackageVersion: 1.2.14
+InstallerType: zip
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/TheRealJesusTheHacker/Argus.exe/releases/download/v1.2.14/ArgusPortable.zip
+  InstallerSha256: 7097EC1D3FAE6B42423FFAA27041431422555BE8A60B9B1EE4F2E7ABADA305B5
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: Argus.exe
+    PortableCommandAlias: argus
+ManifestType: installer
+ManifestVersion: 1.10.0
